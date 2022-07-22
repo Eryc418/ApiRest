@@ -34,4 +34,6 @@ public class Jogos {
     @ManyToOne(cascade = {CascadeType.PERSIST})
     @JoinColumn(name = "categoria_id")
     Categoria categoria;
+
+    
 }

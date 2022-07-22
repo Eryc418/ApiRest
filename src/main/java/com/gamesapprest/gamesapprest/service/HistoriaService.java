@@ -1,9 +1,7 @@
 package com.gamesapprest.gamesapprest.service;
 
 import com.gamesapprest.gamesapprest.dominio.Historia;
-import com.gamesapprest.gamesapprest.dominio.Jogos;
 import com.gamesapprest.gamesapprest.repositorio.HistoriaRepository;
-import com.gamesapprest.gamesapprest.repositorio.JogosRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
