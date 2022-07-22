@@ -50,6 +50,6 @@ public class JogosService {
             }
         }
         
-        return nova_lista_jogos;
+        return nova_lista_jogos;// array
     }
 }
