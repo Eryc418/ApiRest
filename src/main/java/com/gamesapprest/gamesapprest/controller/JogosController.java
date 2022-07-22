@@ -5,6 +5,7 @@ import com.gamesapprest.gamesapprest.dto.jogosDto.JogosRequestDto;
 import com.gamesapprest.gamesapprest.dto.jogosDto.JogosResponseDto;
 import com.gamesapprest.gamesapprest.service.JogosService;
 import org.modelmapper.ModelMapper;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,6 +25,11 @@ public class JogosController {
     @GetMapping
     public List<Jogos> relatorioJogos(){
         return service.relatorio();
+    }
+
+    @GetMapping(path = {"categoria/{id}"})
+    public List<Jogos> findByJogosCategoria(@PathVariable Integer id){
+        return service.findByIdCategoria(id);
     }
 
     @GetMapping(path = {"/{id}"})//funcionando

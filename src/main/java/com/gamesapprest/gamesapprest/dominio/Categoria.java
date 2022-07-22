@@ -17,4 +17,20 @@ public class Categoria {
     private Integer id;
     @NotBlank
     String nome;
+
+    public void setId(Integer id){
+        this.id = id;
+    }
+
+    public Integer getId(){
+        return this.id;
+    }
+
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public String getNome(){
+        return this.nome;
+    }
 }

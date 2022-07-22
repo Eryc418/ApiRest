@@ -17,4 +17,20 @@ public class Historia {
     private Integer id;
     @NotBlank
     String historia;
+
+    public void setId(Integer id){
+        this.id = id;
+    }
+
+    public Integer getId(){
+        return this.id;
+    }
+
+    public void setHistoria(String historia){
+        this.historia = historia;
+    }
+
+    public String getHistoria(){
+        return this.historia;
+    }
 }
